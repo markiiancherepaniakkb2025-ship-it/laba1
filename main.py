@@ -5,8 +5,12 @@ def main():
     Головна функція програми. Демонструє роботу імпортованих 
     модулів шляхом виклику функцій та виведення результату.
     """
-    w = 5.0
-    h = 3.0
+    try:
+        w = float(input("Введіть ширину прямокутника (w): "))
+        h = float(input("Введіть висоту прямокутника (h): "))
+    except ValueError:
+        print("Помилка: потрібно ввести число!")
+        return
     
     area = calculate_area(w, h)
     perimeter = calculate_perimeter(w, h)
