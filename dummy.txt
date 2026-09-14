@@ -1,3 +1,3 @@
 This is a dummy file to test merge conflicts.
-Line 2
+Line 2 from Branch B
 Line 3
